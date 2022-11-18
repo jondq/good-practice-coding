@@ -1,4 +1,4 @@
-originally taken from <zairahira/Git-Cheat-Sheet>
+originally taken from https://github.com/zairahira/Git-Cheat-Sheet
 # All the fool-proof important git commands
 
 ## 🙏 Contributing
@@ -78,6 +78,15 @@ Login to your account and navigate to settings.
 
 - `ssh-add <your-key>` or `ssh-add ~/.ssh/key`.
 
+*Note* In Mac you have to write a new file config whit this text
+`cd ~/.ssh/`
+`nano config`
+Host *
+        AddKeysToAgent yes
+        UseKeychain yes
+        IdentityFile ruta-donde-guardaste-tu-llave-privada
+
+`ssh-add -K ~/.ssh/key`
 # Workflow of changes
 
 Changes are made locally in the working area.
