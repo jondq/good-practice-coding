@@ -24,7 +24,18 @@ The pipe (|) takes the output of the program on its left side and directs the ou
  - `cmd1 & cmd2 & cmd3` ejecuta comandos de manera asincrona. Crea un hilo de procesamiento por cada cmd. 
  - `cmd1 && cmd2` ejecucion condicional. Se ejecuta cmd2 solo si se ejecuta cmd1. && haces las veces de AND logico. Se puede utilizar el OR como ||
 
-### Permisos de un archivo (chmod)
+## Manejo de usuarios
+El comando *id* nos muestra el identificador único (uid) de cada usuario en nuestro sistema operativo. El ID 0 está reservado para el usuario root.
+
+Con el comando whoami podemos ver con qué usuario estamos trabajando en este momento. Podemos ver todos los usuarios del sistema leyendo el archivo /etc/passwd.
+
+- `sudo adduser nombre-usuario` crea un nuevo usuario con contraseña y algo más de información. También creará una nueva carpeta en la carpeta /home/.
+- `userdel nombre-usuario` eliminar cuentas de usuarios.
+- `usermod` modificar la información de alguna cuenta.
+
+Nunca modifiques a mano el archivo /etc/passwd. Para administrar los usuarios debemos usar los comandos que estudiamos en clase.
+
+## Permisos de un archivo (chmod)
 
 `chmod [simboloDelUsuario][operador][permiso] [archivoParaCambiarSusPermisos]`  
 * Simbolo de usuario: u (user, owner), g (group), o (others), a (todos)
