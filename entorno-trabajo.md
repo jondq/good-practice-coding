@@ -5,7 +5,7 @@
 ## Conda  
 Conda es una herramienta de gestión de paquetes y entornos de Python, que permite a los usuarios instalar paquetes y controlar su compatibilidad con otros paquetes en un entorno aislado. También es útil para resolver dependencias y para compartir y replicar entornos de desarrollo en un equipo.  
 Para instalar conda basta con obtener miniconda (la versión minima con python, conda y modulos base) o Anaconda, una distribución más completa con más de 150 modulos e interfac gráfica.
-`>> wget -0 anaconda.sh link_distribucion`
+`>> wget -O anaconda.sh link_distribucion`
 
 ### Recomendaciones:
 1. Crear y utilizar entornos separados para cada proyecto: esto asegura que las dependencias y las versiones de los paquetes se mantengan separadas y evita conflictos.
